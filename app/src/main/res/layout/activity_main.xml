@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+ <TextView
+     style="@style/MyStyle"
+     android:text="Type and Run" />
+
+ <TextView
+     style="@style/MyStyle"
+     android:text="Make:" />
+
+ <EditText
+     android:id="@+id/etmk"
+     style="@style/MyStyle1"
+     android:hint="Enter the name of a car" />
+
+ <TextView
+     style="@style/MyStyle"
+     android:text="Year:" />
+
+ <EditText
+     android:id="@+id/etyr"
+     style="@style/MyStyle1"
+     android:inputType="number"
+     android:hint="Enter the year" />
+
+ <TextView
+     style="@style/MyStyle"
+     android:text="Color:" />
+
+ <EditText
+     android:id="@+id/etclr"
+     style="@style/MyStyle1"
+     android:hint="Enter color" />
+
+ <TextView
+     style="@style/MyStyle"
+     android:text="Purchase price($):" />
+
+ <EditText
+     android:id="@+id/etprice"
+     style="@style/MyStyle1"
+     android:inputType="number"
+     android:hint="Enter purchase price" />
+
+ <TextView
+     style="@style/MyStyle"
+     android:text="Engine Size(litre):" />
+
+ <EditText
+     android:id="@+id/etsize"
+     style="@style/MyStyle1"
+     android:hint="Enter engine size" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="50dp"
+     android:layout_marginRight="50dp"
+     android:orientation="horizontal">
+
+  <Button
+      android:id="@+id/btnCreate"
+      style="@style/MyStyle2"
+      android:text="Create Car" />
+
+  <Button
+      style="@style/MyStyle2"
+      android:text="Create Diesel" />
+
+ </LinearLayout>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="30dp"
+      android:background="@color/colorAccent"
+      android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/tvresult"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+ </ScrollView>
+
+</LinearLayout>
